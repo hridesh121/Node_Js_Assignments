@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <ul>
+        <!-- below line will be for javascript code  -->
+       <% users.forEach((user)=>{ %>
+            <li class = "user">
+            <!--dynamic content  not fixed ----- in each row passing data from users array pussing data into rthe rows -->
+                <h3><%= user.name%></h3>   
+                <p><%= user.email%></p>
+            </li>
+       <%}) %>
+    </ul>
+    <br />
+    <button><a href="/form">Add user</a></button>
+</body>
+</html> 
+
